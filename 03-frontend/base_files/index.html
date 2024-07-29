@@ -5,24 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of Places</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./icon.png">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="login.html" id="login-link">Login</a>
-        </nav>
+    <header class="header" data-section-theme="light">
+        <div class="container">
+          <div class="logo">
+            <a href="">
+              <img src="./logo.png" alt="hbnb logo" width="160" height="40">
+            </a>
+          </div>
+          <nav class="navbar-menu">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Index</a>
+              </li>
+              <li class="nav-item">
+                <a href="place.html" class="nav-link">place</a>
+              </li>
+              <li class="nav-item">
+                <a href="add_review.html" class="nav-link">add_review</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="login-button">Login</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     </header>
     <main>
-        <section id="filter">
-            <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-                <!-- Options will be populated dynamically -->
-            </select>
-        </section>
-        <section id="places-list">
-            <!-- List of places will be populated dynamically -->
+        <section id="Places" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Available places</h2>
+                </header>
+                <section id="filter">
+                    <label for="country-filter">Filter by Country:</label>
+                    <select id="country-filter">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </section>
+                <section id="places-list">
+                    <div class="place-card">
+                        <img src="beach-house.jpg" alt="Beautiful Beach House" class="place-image">
+                        <h3>Beautiful Beach House</h3>
+                        <p>Price per night: $150</p>
+                        <p>Location: Los Angeles, United States</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                    <div class="place-card">
+                        <img src="cozy-cabin.jpg" alt="Cozy Cabin" class="place-image">
+                        <h3>Cozy Cabin</h3>
+                        <p>Price per night: $100</p>
+                        <p>Location: Toronto, Canada</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                    <div class="place-card">
+                        <img src="modern-apartment.jpg" alt="Modern Apartment" class="place-image">
+                        <h3>Modern Apartment</h3>
+                        <p>Price per night: $200</p>
+                        <p>Location: New York, United States</p>
+                        <button class="details-button">View Details</button>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
+    <footer class="footer" data-section-theme="light">
+        <div class="container">
+          <p>&copy; 2024 HBnB. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
