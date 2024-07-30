@@ -479,7 +479,9 @@ main {
     color: var(--nav-item-link-hover);
 }
 
-.nav .nav-link.active {
+.nav .nav-link.active,
+.nav .nav-link.active:visited
+.nav .loging-button.active{
     color: var(--nav-current-link-color);
 }
 
